@@ -273,6 +273,7 @@ body {
     .explore-button {
         font-size: 0.9rem;
         padding: 15px 30px;
+
         height: 50px;
     }
 }
@@ -315,6 +316,7 @@ body {
 
     .explore-button {
         font-size: 0.75rem;
+        margin-top: 80px;;
         padding: 10px 20px;
         height: 40px;
     }
@@ -442,6 +444,7 @@ body {
 
 .two-columns {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     gap: 20px; /* Adjusts the gap between the paragraphs */
     margin-top: 20px;
@@ -525,12 +528,32 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .about-us .text h4{ 
+        font-size: 20px;
+    }
+    .about-us .text h5{
+        font-size: 0.7rem;
+    }
+    .two-columns p{
+        font-size: 0.7rem;
+    }
+    .about-us .text h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .learn-more-button {
+        font-size: 0.7rem;
+        padding: 10px 10px;
+    }
+    
+
+
     .about-us {
         padding: 30px 15px;
     }
 
     .about-us h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .about-us h3 {
@@ -543,6 +566,9 @@ body {
 
     .about-us .images {
         grid-template-columns: 1fr;
+        max-width: 200px;
+        padding-bottom: 30px;
+      
     }
 
     /* Hide second and fourth images on very small screens */
@@ -557,10 +583,7 @@ body {
         margin-top: 0;
     }
 
-    .about-us .images img:nth-child(3) {
-        max-width: 100%;
-        margin-top: 0;
-    }
+
 }
 
 
@@ -672,6 +695,7 @@ body {
     .services .services-content {
         flex-direction: column; /* Stack the text and cards vertically */
         align-items: center; /* Center the content */
+       
 
     }
 
@@ -685,7 +709,7 @@ body {
 
     }
     .text-content {
-        width: 80%; /* Full width on small screens */
+        width: 100%; /* Full width on small screens */
         text-align: center;
         margin-bottom: 30px;
     }
@@ -707,9 +731,19 @@ body {
 }
 
 @media (max-width: 480px) {
+    
+    .services{
+        align-items: center;
+    }
     .service-card-container {
         grid-template-columns: 1fr; /* 1 column layout for very small screens */
         grid-template-rows: auto; /* Automatically adjust rows */
+        
+    }
+    .text-content {
+        width: 100%; /* Full width on small screens */
+        text-align: center;
+        margin-bottom: 30px;
     }
 
     .service-card {
@@ -718,11 +752,13 @@ body {
     }
 
     .text-content h2 {
-        font-size: 1.2rem; /* Adjust font size */
+        font-size: 1rem; /* Adjust font size */
     }
 
     .text-content h3 {
         font-size: 1.8rem; /* Adjust font size */
+        line-height: 30px;
+        margin: unset;
     }
     .service-card {
         height: 250px; /* Adjust height for mobile */
