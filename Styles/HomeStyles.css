@@ -892,6 +892,12 @@ body {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 480px) {
+    .contact{
+        padding: unset;
+    }
+    
+}
 /* Footer Styles */
 /* Footer Base Styles */
 .footer {
@@ -980,53 +986,67 @@ body {
     margin-bottom: 10px;
 }
 
+.back-to-top {
+    display: none;
+    gap: 10px;
+    font-size: 1.8rem;
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+.back-to-top i{
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.back-to-top:hover .back-to-top i {
+    transform: translateY(-5px); /* Darker background on hover */
+}
 /* Responsive Adjustments */
+
 @media screen and (max-width: 768px) {
-    .footer-container {
-        flex-direction: column; /* Stack sections vertically */
-        align-items: center; /* Center align content */
-        text-align: center; /* Center align text */
+    .footer {
+        display: flex; /* Use flexbox for alignment */
+        justify-content: center;
+        align-items: center;
+        padding: 10px 80px; /* Reduce padding for smaller screens */
+        text-align: center; /* Center align content */
     }
 
-    .footer-left,
+    .footer-container {
+        display: flex; /* Use flexbox for alignment */
+        justify-content: center; /* Space between logo and icons */
+        align-items: center; /* Align content vertically */
+        flex-direction: row; /* Arrange items horizontally */
+    }
+
+    .footer-left {
+        display: flex; /* Use flex to align logo and icons horizontally */
+        justify-content: center; /* Align items to the left */
+        align-items: center; /* Align items vertically in the center */
+        gap: 0px; /* Add space between logo and icons */
+    }
+
+    .footer-logo {
+        max-width: 200px; /* Adjust logo size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .social-links {
+        display: flex; /* Show social links */
+        gap: 15px; /* Space between icons */
+        font-size: 1.8rem; /* Adjust icon size */
+    }
+
+    .back-to-top {
+        display: flex; /* Make the icon visible */
+    }
     .footer-middle,
     .footer-right {
-        width: 100%; /* Full width for each section */
-        margin-bottom: 20px; /* Adds spacing between stacked sections */
-    }
-
-    .social-links {
-        justify-content: center; /* Center social links */
-    }
-
-    .footer-logo {
-        margin: 0 auto 20px; /* Centers the logo */
+        display: none; /* Hide the middle and right sections */
     }
 }
 
-@media screen and (max-width: 480px) {
-    .footer {
-        padding: 20px 10px; /* Reduce padding for smaller screens */
-    }
 
-    .footer-middle h3,
-    .footer-right h3 {
-        font-size: 1.2rem; /* Adjust heading size */
-    }
 
-    .footer-middle a,
-    .footer-right p {
-        font-size: 0.9rem; /* Adjust text size */
-    }
 
-    .social-links {
-        font-size: 1.2rem; /* Adjust icon size */
-    }
-
-    .footer-logo {
-        max-width: 120px; /* Smaller logo */
-    }
-}
 
 
 
