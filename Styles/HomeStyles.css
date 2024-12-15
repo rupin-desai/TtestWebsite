@@ -734,6 +734,16 @@ body {
     
     .services{
         align-items: center;
+        padding: 30px; /* Reduce padding for smaller screens */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        text-align: center; /* Align text to the center */
+    }
+    .services .services-content {
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        text-align: center; /* Align text to the center */
     }
     .service-card-container {
         grid-template-columns: 1fr; /* 1 column layout for very small screens */
@@ -807,7 +817,7 @@ body {
     }
 
     .partner-section .left {
-        font-size: 1.2rem; /* Reduce font size */
+        font-size: 1.8rem; /* Reduce font size */
         margin-bottom: 20px; /* Add space between text and images */
     }
 
@@ -823,11 +833,11 @@ body {
     }
 
     .partner-section .left {
-        font-size: 1rem; /* Smaller font size */
+        font-size: 1.6rem; /* Smaller font size */
     }
 
     .partner-section .right img {
-        max-height: 50px; /* Smaller image size */
+        max-height: 100px; /* Smaller image size */
     }
 }
 
