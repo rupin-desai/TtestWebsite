@@ -887,17 +887,19 @@ body {
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
     height: 100vh; /* Full viewport height */
-    flex-direction: column; /* Stack the sections vertically on small screens */
+    flex-direction: row; /* Arrange sections in a row for larger screens */
 }
 
+/* Container inside the contact section */
 .contact .container {
     display: flex;
     justify-content: center; /* Centers the container horizontally */
     align-items: center; /* Centers the container vertically */
     gap: 30px;
-    flex-direction: column; /* Stack the sections vertically on small screens */
+    flex-direction: row; /* Keep sections side by side for larger screens */
 }
 
+/* Left Section with Image */
 .contact .left img {
     width: 100%; /* Image takes full width of the left section */
     max-width: 800px;
@@ -907,29 +909,34 @@ body {
     margin-bottom: 20px; /* Add space below the image */
 }
 
+/* Right Section with Text */
 .contact .right {
     flex: 1;
     text-align: left; /* Align text to the left */
     max-width: 100%; /* Ensure the right section takes full width on small screens */
 }
 
+/* Heading style */
 .contact h2 {
     font-size: 2rem;
     font-weight: bold;
     color: var(--blue-dark); /* Blue color */
 }
 
+/* Paragraph style */
 .contact p {
     font-size: 1.2rem;
     font-weight: 300; /* Light weight */
     color: #333; /* Black color */
 }
 
+/* Link style */
 .contact a {
     color: var(--blue-dark);
     text-decoration: none;
 }
 
+/* Hover effect for links */
 .contact a:hover {
     text-decoration: underline;
 }
@@ -965,11 +972,11 @@ body {
     .contact {
         padding: unset; /* Reduce padding further on very small screens */
     }
+    
     .contact .left img {
         width: 200px; /* Ensure image takes full width on smaller screens */
         margin-top: -19%;
         margin-bottom: -25%; /* Less space between image and text */
-
     }
 
     .contact h2 {
@@ -982,12 +989,6 @@ body {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .contact{
-        padding: unset;
-    }
-    
-}
 /* Footer Styles */
 /* Footer Base Styles */
 .footer {
