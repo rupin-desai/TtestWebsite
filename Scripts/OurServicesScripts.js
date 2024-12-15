@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Select the first card by default
     const firstCard = document.querySelector('.service-card');
     firstCard.classList.add('selected');
-    firstCard.click();
+    //firstCard.click();
 
     // Get the service type from the URL (if available)
     const urlParams = new URLSearchParams(window.location.search);
