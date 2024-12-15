@@ -13,35 +13,41 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="logo">
             <img src="../Assests/sacp6Copy.png" alt="SACP Logo">
         </div>
         <nav class="nav">
+    
             <div class="dropdown">
                 <a href="../Pages/HomePage.html">Home <i class="material-icons">expand_more</i></a>
                 <div class="dropdown-content">
-                    <a href= "../Pages/HomePage.html#about">About Us</a>
+                    <a href="../Pages/HomePage.html#about">About</a>
                     <a href="../Pages/HomePage.html#services">Services</a>
                     <a href="../Pages/HomePage.html#contact">Contact</a>
                 </div>
             </div>
-            <div class="dropdown">
-                <a href="../Pages/AboutUsPage.html" class="about-link">About Us <i class="material-icons">expand_more</i></a>
-                <div class="dropdown-content">
-                    <a href="../Pages/AboutUsPage.html#about">About Us</a>
-                    <a href="../Pages/AboutUsPage.html#mission">Mission</a>
-                    <a href="../Pages/AboutUsPage.html#vision">Our Vision</a>
-                    <a href="../Pages/AboutUsPage.html#team">Our Team</a>
+    
+                <div class="dropdown">
+                    <a href="../Pages/AboutUsPage.html" class="about-link">About Us <i class="material-icons">expand_more</i></a>
+                    <div class="dropdown-content">
+                        <a href="../Pages/AboutUsPage.html#about">About Us</a>
+                        <a href="../Pages/AboutUsPage.html#mission">Mission</a>
+                        <a href="../Pages/AboutUsPage.html#vision">Our Vision</a>
+                        <a href="../Pages/AboutUsPage.html#team">Our Team</a>
+                    </div>
                 </div>
-            </div>
+                <div class="dropdown">
+                    <a href="../Pages/OurServicesPage.html" class="about-link">Services</a>
+                    <div class="dropdown-content">
+                    </div>
+                </div>
             <div class="dropdown">
-                <a href="../Pages/OurServicesPage.html">Our Services</a>
+                <a href="../Pages/ContactUsPage.html" class="home-link">Contact</a>
             </div>
-            <a href="../Pages/ContactUsPage.html" class="home-link">Contact</a>
+    
         </nav>
     </header>
-
     <!-- Contact Us Section -->
     <section class="contact-form-section">
         <form id="contactForm">
@@ -81,8 +87,23 @@
             <div class="footer-left">
                 <img src="../Assests/sacpfull_white.png" alt="SACP Logo" class="footer-logo">
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/company/sacp-global-pvt-ltd/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:info@sacpglobal.com" title="Mail"><i class="fas fa-envelope"></i></a>
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/company/sacp-global-pvt-ltd/" 
+                       target="_blank" 
+                       title="LinkedIn" 
+                       class="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- Mail Icon -->
+                    <a href="mailto:info@sacpglobal.com" 
+                       title="Mail" 
+                       class="mail">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <!-- Mail Icon -->
+                    <a href="#header" class="back-to-top" title="Back to Top">
+                        <i class="fas fa-arrow-circle-up"></i>
+                    </a>
                 </div>
             </div>
     
@@ -106,6 +127,8 @@
             </div>
         </div>
     </footer>
+
+
     <!-- Scripts -->
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="../Scripts/ContactUsScripts.js"></script>
